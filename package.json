@@ -1,0 +1,13 @@
+{
+  "name": "greencurve_cta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "eslint": "^8.32.0",
+    "live-server": "^1.2.2"
+  }
+}

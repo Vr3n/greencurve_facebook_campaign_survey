@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Campaign Survey</title>
+  </head>
+  <body>
+    <main class="max-w-lg mx-auto my-5 z-10">
+      <div class="flex flex-col gap-2 card">
+        <h1 class="text-green-700">Greencurve Securities.</h1>
+        <h2 class="text-xl font-bold">Invest In Tomorrow's Unicorns.</h2>
+        <h4 class="text-sm text-gray-500">
+          Start investing in unlisted shares before they're public.
+        </h4>
+      </div>
+      <form action="get">
+        <div class="card items-start gap-3">
+          <h3 class="text-xl font-bold mb-4">Your Full name</h3>
+
+          <div class="relative w-full">
+            <label for="name" class="hidden">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your full name here"
+              class="w-full shadow-md border border-black bg-gray-100 rounded-md p-2"
+            />
+          </div>
+        </div>
+
+        <div class="card items-start gap-3">
+          <h3 class="text-xl font-bold mb-4">Email Id</h3>
+
+          <div class="relative w-full">
+            <label for="email" class="hidden">email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address here"
+              class="w-full shadow-md border border-black bg-gray-100 rounded-md p-2"
+            />
+          </div>
+        </div>
+
+        <div class="card items-start gap-3">
+          <h3 class="text-xl font-bold mb-4">Mobile Number</h3>
+
+          <div class="relative w-full">
+            <label for="mobile_number" class="hidden">mobile numbe</label>
+            <input
+              type="text"
+              name="mobile_number"
+              id="mobile_number"
+              placeholder="Enter your mobile number here"
+              class="w-full shadow-md border border-black bg-gray-100 rounded-md p-2"
+            />
+          </div>
+        </div>
+
+        <div class="card items-start gap-6">
+          <h3 class="text-xl font-bold mb-4">Investment Capital?</h3>
+
+          <div class="relative w-full">
+            <input
+              type="radio"
+              class="sr-only peer focus:outline focus:outline-2 focus:outline-black"
+              name="investment_capital"
+              id="upto_lakh"
+            />
+            <label
+              class="flex p-5 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer peer-focus:outline peer-focus:outline-2 peer-focus:outline-black hover:bg-gray-100 peer-checked:ring-green-500 peer-checked:bg-green-500 peer-checked:ring-2 peer-checked:border-transparent"
+              for="upto_lakh"
+              ><span class="self-center">Upto &#x20B9;1 Lakh</span></label
+            >
+          </div>
+
+          <div class="relative w-full">
+            <input
+              class="sr-only peer"
+              type="radio"
+              name="investment_capital"
+              id="lakh_above"
+            />
+            <label
+              class="flex p-5 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer peer-focus:outline peer-focus:outline-2 peer-focus:outline-black hover:bg-gray-100 peer-checked:ring-green-500 peer-checked:bg-green-500 peer-checked:ring-2 peer-checked:border-transparent"
+              for="lakh_above"
+              >&#x20B9;1 Lakh & Above</label
+            >
+          </div>
+        </div>
+        <div class="card items-start gap-6">
+          <h3 class="text-xl font-bold mb-4">Buy or Sell Shares?</h3>
+          <div class="relative w-full">
+            <input
+              class="sr-only peer"
+              type="radio"
+              name="buy_or_sell_shares"
+              id="buy"
+            />
+            <label
+              class="flex p-5 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer peer-focus:outline peer-focus:outline-2 peer-focus:outline-black hover:bg-gray-100 peer-checked:ring-green-500 peer-checked:bg-green-500 peer-checked:ring-2 peer-checked:border-transparent"
+              for="buy"
+              >Buy</label
+            >
+          </div>
+
+          <div class="relative w-full">
+            <input
+              type="radio"
+              class="sr-only peer"
+              name="buy_or_sell_shares"
+              id="sell"
+            />
+            <label
+              class="flex p-5 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer peer-focus:outline peer-focus:outline-2 peer-focus:outline-black hover:bg-gray-100 peer-checked:ring-green-500 peer-checked:bg-green-500 peer-checked:ring-2 peer-checked:border-transparent"
+              for="sell"
+              >Sell</label
+            >
+          </div>
+        </div>
+        <button
+          class="rounded-md py-2 px-8 w-full bg-blue-500 text-white hover:bg-blue-700"
+        >
+          Submit Survey
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
